@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Left Sidebar Example</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+
+
+
+  <div class="sidebar">
+    <a href="#" onclick="showSection('home-section')">Home</a>
+    <a href="#" onclick="showSection('contact-section')">Contact</a>
+    <a href="#" onclick="showSection('information-section')">Information</a>
+    <a href="#" onclick="showSection('guide-section')">Guide</a>
+  </div>
+
+  <div class="content">
+    <div id="home-section" class="section active">
+      <h1>Home</h1>
+      <p>Welcome to the home section.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis fugiat similique sequi obcaecati optio asperiores aliquid autem, unde adipisci quam repellendus eligendi illum explicabo id quod dolores quasi, labore cupiditate.
+      Tempore corrupti natus quasi provident error ea similique sequi illum. Et earum rem perferendis illum laudantium, quidem iste ut voluptas, sed incidunt itaque repellat quaerat exercitationem, mollitia laboriosam beatae? Voluptatum.
+      Omnis enim dolorum, debitis fugit perspiciatis suscipit adipisci inventore voluptatem dolores repudiandae sint nostrum quae doloremque exercitationem dolorem porro cum pariatur. Non hic quis numquam placeat odio optio illum sapiente!
+      Reprehenderit, quia repellat omnis nisi ipsa optio saepe a dolores dicta nesciunt minus iusto ullam, aliquam voluptate. Atque veritatis, magnam reici emque exercitationem dolorem porro cum pariatur. Non hic quis numquam placeat odio optio illum sapiente!
+      Reprehenderit, quia repellat omnis nisi ipsa optio saepe a dolores dicta nesciunt minus iusto ullam, aliquam voluptate. Atque veritatis, endis, velit, explicabo repudiandae ea illum cum eligendi sed assumenda.</p>
+    </div>
+    <div id="contact-section" class="section">
+      <h1>Contact</h1>
+      <p>Contact information goes here.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis fugiat similique sequi obcaecati optio asperiores aliquid autem, unde adipisci quam repellendus eligendi illum explicabo id quod dolores quasi, labore cupiditate.
+        Tempore corrupti natus quasi provident error ea similique sequi illum. Et earum rem perferendis illum laudantium, quidem iste ut voluptas, sed incidunt itaque repellat quaerat exercitationem, mollitia laboriosam beatae? Voluptatum.
+        Omnis enim dolorum, debitis fugit perspiciatis suscipit adipisci inventore voluptatem dolores repudiandae sint nostrum quae doloremque exercitationem dolorem porro cum pariatur. Non hic quis numquam placeat odio optio illum sapiente!
+        Reprehenderit, quia repellat omnis nisi ipsa optio saepe a dolores dicta nesciunt minus iusto ullam, aliquam voluptate. Atque veritatis, magnam reiciendis, velit,   veritatis, magnam reiciendis, velit, explicabo r explicabo repudiandae ea illum cum eligendi sed assumenda.</p>
+    </div>
+    <div id="information-section" class="section">
+      <h1>Information</h1>
+      <p>Additional information can be displayed here.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis fugiat similique sequi obcaecati optio asperiores aliquid autem, unde adipisci quam repellendus eligendi illum explicabo id quod dolores quasi, labore cupiditate.
+        Tempore corrupti natus quasi provident error ea similique sequi illum. Et earum rem perferendis illum laudantium, quidem iste ut voluptas, sed incidunt itaque repellat quaerat exercitationem, mollitia laboriosam beatae? Voluptatum.
+        Omnis enim dolorum, debitis fugit perspiciatis suscipit adipisci inventore voluptatem dolores repudiandae sint nostrum quae doloremque exercitationem dolorem porro cum pariatur. Non hic quis numquam placeat odio optio illum sapiente!
+        Reprehenderit, quia repellat omnis nisi ipsa optio saepe a dolores dicta nesciunt minus iusto ullam, aliquam voluptate. quae doloremque exercitationem dolorem porro cum pariatur. Non hic quis numquam placeat odio optio illum sapiente!
+        Reprehenderit, quia repellat omnis nisi ipsa optio saepe a dolores dicta nesciunt minus iusto ullam, aliquam voluptate. Atque veritatis, magnam reiciendis, velit, explicabo repudiandae ea illum cum eligendi sed assumenda.</p>
+    </div>
+    <div id="guide-section" class="section">
+      <h1>Guide</h1>
+      <p>A guide or instructions can be shown in this section.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis fugiat similique sequi obcaecati optio asperiores aliquid autem, unde adipisci quam repellendus eligendi illum explicabo id quod dolores quasi, labore cupiditate.
+        Tempore corrupti natus quasi provident error ea similique sequi illum. Et earum rem perferendis illum laudantium,  quidem iste ut voluptas, sed incidunt itaque repellat quaerat exercitationem, mollitia laboriosam beatae? Voluptatum.
+        Omnis enim dolorum, debitis fugit perspiciatis suscipit adipisci inventore voluptatem dolores repudiandae sint nostrum quae doloremque exercitationem dolorem porro cum pariatur. Non hic quis numquam placeat odio optio illum sapiente!
+        Reprehenderit, quia repellat omnis nisi ipsa optio saepe a dolores dicta nesciunt minus iusto ullam, aliquam voluptate quidem iste ut voluptas, sed incidunt itaque repellat quaerat exercitationem, mollitia laboriosam beatae? Voluptatum.
+        Omnis enim dolorum, debitis fugit perspiciatis suscipit adipisci inventore voluptatem dolores repudiandae sint nostrum quae doloremque exercitationem dolorem porro cum pariatur. Non hic quis numquam placeat odio optio illum sapiente!
+        Reprehenderit, quia repellat omnis nisi ipsa optio saepe a dolores dicta nesciunt minus iusto ullam, aliquam voluptate. Atque veritatis, magnam reiciendis, velit, explicabo repudiandae ea illum cum eligendi sed assumenda.</p>
+    </div>
+  </div>
+
+
+  <script>
+    function showSection(sectionId) {
+      var sections = document.getElementsByClassName("section");
+      for (var i = 0; i < sections.length; i++) {
+        sections[i].classList.remove("active");
+      }
+
+      var section = document.getElementById(sectionId);
+      section.classList.add("active");
+    }
+  </script>
+</body>
+
+</html>
